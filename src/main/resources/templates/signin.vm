@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/vote-no-restaurante/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/vote-no-restaurante/bootstrap/css/bootstrap-theme.min.css">
+<script src="/vote-no-restaurante/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<span>Please, fill the form:</span>
+	
+	<form name="signin" action="/vote-no-restaurante/ranking" method="post">
+		<div class="form-group">
+			<label for="name">Name</label>
+			<input name="$name" id="name" class="form-control" type="text" placeholder="Name"/>
+		</div>
+        <div class="form-group">
+        		<label for="name">Email</label>
+				<input name="$email" id="email" class="form-control" type="email" placeholder="Email"/>
+		</div>	
+		<button type="submit" class="btn btn-primary">Vote</button>			
+	</form>
+	
+	
+</body>
+
+</html>

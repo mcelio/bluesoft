@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/vote-no-restaurante/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/vote-no-restaurante/bootstrap/css/bootstrap-theme.min.css">
+<script src="/vote-no-restaurante/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	Something went wrong: ${status} ${error}
+</body>
+
+</html>

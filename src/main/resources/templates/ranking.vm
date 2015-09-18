@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/vote-no-restaurante/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/vote-no-restaurante/bootstrap/css/bootstrap-theme.min.css">
+<script src="/vote-no-restaurante/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+		<h1><span class="label label-default">My Poll</span></h1>
+		<table title="My Poll" class="table table-striped">
+			<thead>
+				<tr>
+					<td>
+						Restaurant
+					</td>
+					<td>
+						Votes
+					</td>
+				</tr>
+			</thead>
+			
+			#foreach ($restaurant in $my_poll)
+				<tr>
+					<td>
+						$restaurant.name
+					</td>
+					<td>
+						$restaurant.voteNumber
+					</td>
+				</tr>
+			#end
+		
+		</table>
+		
+		<h1><span class="label label-default">General Poll</span></h1>
+		<table title="General Poll" class="table table-striped">
+			<thead>
+				<tr>
+					<td>
+						Restaurant
+					</td>
+					<td>
+						Votes
+					</td>
+				</tr>
+			</thead>
+			#foreach ($restaurant in $general_poll)
+				<tr>
+					<td>
+						$restaurant.name
+					</td>
+					<td>
+						$restaurant.voteNumber
+					</td>
+				</tr>
+			#end
+		
+		</table>
+		
+	<div class="form-group">
+		<form action="/vote-no-restaurante/restart">
+			<button type="submit" class="btn btn-primary">Restart</button>			
+		</form>
+	</div>	
+	
+</body>
+
+</html>
