@@ -6,7 +6,7 @@
 	<groupId>org.vote-no-restaurante</groupId>
 	<artifactId>vote-no-restaurante</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<name>vote-no-restaurante</name>
 	<description>Bluesoft test</description>
